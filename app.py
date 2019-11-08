@@ -32,7 +32,7 @@ def allowed_file(filename):
 
 @app.route('/', methods=['GET'])
 def home():
-    return redirect("https://google.com")
+    return redirect("https://documenter.getpostman.com/view/9310664/SW18vENi?version=latest")
 
 
 @app.route('/', methods=['POST'])
