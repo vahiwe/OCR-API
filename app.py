@@ -5,10 +5,8 @@ import urllib.request
 from flask import Flask, request, redirect, jsonify, render_template
 from werkzeug.utils import secure_filename
 # pt.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
-#pt.pytesseract.tesseract_cmd = 'Tesseract-OCR/tesseract.exe'
 
-# import our OCR function
-
+# OCR function
 def ocr_core(filename):
     """
     This function will handle the core OCR processing of images.
@@ -32,8 +30,13 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
 def allowed_file(filename):
 	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+@app.route('/', methods=['GET'])
+def home():
+    return redirect("https://google.com")
+
+
 @app.route('/', methods=['POST'])
-def upload_file():
+def analyze_file():
 	# check if the post request has the file part
 	if 'file' not in request.files:
 		resp = jsonify({'message' : 'No file part in the request'})
