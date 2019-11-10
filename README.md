@@ -32,6 +32,6 @@ __`❍ pip3 install -r requirements.txt`__
 
 __`❍ python app.py`__
 
-**6)** Open your API Request Client such as Postman or Advanced Rest Clent and make a post request.
+**6)** Open your API Request Client such as Postman or Advanced Rest Client and make a post request.
 
 __*Happy developing!*__
