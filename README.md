@@ -32,8 +32,6 @@ __`❍ pip3 install -r requirements.txt`__
 
 __`❍ python app.py`__
 
-**6)** Open your browser and type in this URL. Post a link to an article to be summarized:
-
-__`❍ http://127.0.0.1:5000/`__
+**6)** Open your API Request Client such as Postman or Advanced Rest Clent and make a post request.
 
 __*Happy developing!*__
